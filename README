@@ -1,0 +1,29 @@
+List Of Expansions Included In My Project:
+
+1. Animation: This feature allows for the visualization of the simulation through an animated plot.
+
+2. Attract and Repel: This feature introduces interactions between walkers in the simulation, allowing them to either attract or repel each other.
+
+3. Terrains: This feature introduces three types of terrains (Water, Sand, and Grass) that influence the movement of the walkers.
+
+4. MemoryWalker: This feature introduces a new type of walker that remembers its previous locations and avoids revisiting them.
+
+5. Type Annotations: This feature enhances the readability of the code and facilitates early error detection.
+
+Detailed Explanation Of Key Features:
+
+1) Animation: 
+	The animation feature is a crucial part of the project as it provides a visual representation of the simulation and helps to understand how the simulation behaves. 
+	It uses the FuncAnimation object from the matplotlib.animation module to animate the movements of the walkers.
+	Each walker is represented by a distinct line on the plot, and each terrain is represented by a rectangle of its respective color. 
+	The user will be asked by the program if he wants to plot the simulations or to skip. If he chooses to plot, he will be asked in every simulation until he chooses to skip all simulations.
+	
+2) Attract and Repel:
+	The Attract and Repel feature introduces interactions between walkers. When more than one walker is present in the simulation, the user is asked if he wants to set an interaction an if so, 
+	he is asked what type of interaction (attract or repel). If an interaction is set, each walker has a 20% chance to move towards or away from the nearest walker during each move depanding on interaction type. 
+	This feature adds an interesting dynamic to the simulation and can significantly influence the results and statistics.
+	
+3) Terrains:
+	The Terrains feature introduces three types of terrains that affect the walkers' movements. Water terrains reset a walker's position to the origin, Grass terrains double a walker's speed, 
+	and Sand terrains halve a walker's speed. These terrains are set in the JSON config file, and checks are in place to prevent multiple terrains from occupying the same spot. 
+	This feature influences the walkers' behavior in interesting ways.
